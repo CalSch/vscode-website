@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>VSCode's features | Shrine of VSCode</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="logo.png" type="image/png">
+
+</head>
+<body>
+	<header>
+		<h1 id="dead">you died :(</h1>
+		<img src="logo.png" alt="VSCode logo" id="logo" width="50" onclick="game()">
+		<p id="score" style="display:none;"></p>
+		<h1>Shrine of VSCode</h1>
+		<div id="line"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="why.html">Why you should use VSCode</a></li>
+				<li><a href="features.html">VSCode's features</a></li>
+				<li><a href="extensions.html">Extensions</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>VSCode's Features</h1>
+		
+		<h2>Multi-line editing</h2>
+		<p>VSCode has support for multi-line editing. Hold down Alt and click somewhere in the file, it will add another cursor to that position, then when you type it will type it in both places.</p>
+		
+		<h2>Emmet</h2>
+		<p>Emmet is a tool to make writing HTML (XML in general) easier and more efficient. It has helpful macros and shortcuts to speed up HTML development.</p>
+		<p>If you type <code>h1#title+p.red+ul&gt;li*5</code> and hit <kbd>Enter</kbd>, it will expand to this:</p>
+		<pre>&lt;h1 id=&quot;title&quot;&gt;&lt;/h1&gt;
+&lt;p class=&quot;red&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+		<details>
+			<summary>Here's a breakdown of what it did</summary>
+			<h3><code>h1</code></h3>
+			<p>This creates an <code>h1</code> element</p>
+			<h3><code>#title</code></h3>
+			<p>This gives an id of "title" to the <code>h1</code> element</p>
+			<h3><code>+p</code></h3>
+			<p>This makes a <code>p</code> element next to the <code>h1</code> element</p>
+			<h3><code>.red</code></h3>
+			<p>This gives a class of "red" to the <code>p</code> element</p>
+			<h3><code>+ul</code></h3>
+			<p>This makes a <code>ul</code> element next to the <code>p</code> element</p>
+			<h3><code>&gt;li</code></h3>
+			<p>This makes an <code>li</code> element inside the <code>ul</code> element</p>
+			<h3><code>*5</code></h3>
+			<p>This repeats the <code>li</code> element 5 times</p>
+		</details>
+
+		<h2>Git</h2>
+		<p>VSCode has built-in Git and GitHub support.</p>
+		
+	</main>
+	
+	<script src="game.js"></script>
+	
+</body>
+</html>

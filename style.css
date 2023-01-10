@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+	transition: 0.2s ease;
+	transition-property: background, color, transform, box-shadow;
+	font-family: 'PT Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(135deg,#31445B,#1a043d);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	color: white;
+	margin-top:100px;
+	overflow-x: hidden;
+}
+
+a {
+	color: #0093FF;
+}
+a:visited {
+	color: #BA70EB;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	border-bottom: 1px dashed rgba(255,255,255,0.5);
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+header {
+	width: 100vw;
+	height: 80px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: absolute;
+	top:0px;
+	left:0px;
+	
+	display: flex;
+	align-items: center;
+	
+	background-color: #66A772;
+	box-shadow: 0px 2px 20px rgba(0,0,0,0.5);
+	padding: 5px;
+}
+
+header > * {
+	margin: 0px 10px;
+}
+
+header * {
+	display: inline-block;
+}
+
+header h1 {
+	margin: 0px 10px;
+}
+
+div#line {
+	display: block;
+	overflow:auto;
+	box-sizing: border-box;
+	height:100%;
+	width:0px;
+	margin: 5px;
+	border-left: 1px dashed white;
+}
+
+nav ul, nav li{
+	padding: 0px;
+	list-style: none;
+}
+nav a {
+	color: white !important;
+	text-decoration: none;
+	font-size: 16pt;
+	padding: 5px 8px;
+	border-radius: 5px;
+	margin: 2px 5px;
+	background-color: #5d9065;
+	box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.476);
+}
+
+nav a:hover {
+	box-shadow:  0px 1px 2px rgba(0, 0, 0, 0.547);
+	background-color: #53825a;
+	transform: translateY(2px);
+}
+
+
+code,pre {
+	font-family: monospace;
+	background-color: rgba(0,0,0,0.3);
+	padding: 3px 4px;
+	border-radius: 5px;
+}
+
+pre {
+	padding: 5px;
+	padding-right: 50px;
+	width: fit-content;
+}
+
+details {
+	background-color: rgba(0,0,0,0.2);
+	padding: 10px;
+	
+}
+
+details>:not(summary) {
+	margin-left: 20px;
+	text-indent: 10px;
+}
+
+summary {
+	cursor: pointer;
+}
+
+
+#dead {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+	text-align: center;
+	width: 100vw;
+	font-size: 120pt;
+	color:red;
+	text-shadow: 5px 5px 10px black;
+}
+
+#logo {
+	z-index: 999;
+}
+#logo:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
